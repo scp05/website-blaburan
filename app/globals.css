@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar{
+    display:none;
+}
+
+.no-scrollbar{
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+}
+/* ========================= */
+/* GALERI */
+/* ========================= */
+
+.gallery-swiper{
+  padding-top:40px;
+}
+
+.gallery-swiper .swiper-pagination{
+  top:0 !important;
+  bottom:auto !important;
+}
+
+.gallery-swiper .swiper-pagination-bullet{
+  width:10px;
+  height:10px;
+  background:#d1d5db;
+  opacity:1;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active{
+  background:#10b981;
+}
