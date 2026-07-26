@@ -23,7 +23,7 @@ export default async function Statistik() {
       small: false,
     },
     {
-      label: 'Dusun',
+      label: 'RT',
       value: s.jumlah_dusun,
       small: false,
     },

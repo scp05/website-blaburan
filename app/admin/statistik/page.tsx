@@ -79,11 +79,11 @@ export default function AdminStatistikPage() {
         <div className="mb-8">
 
           <p className="text-black text-sm font-medium">
-            Data Desa
+            Data Dusun
           </p>
 
           <h1 className="mt-2 text-3xl md:text-4xl font-bold text-black">
-            Statistik Desa
+            Statistik Dusun
           </h1>
 
           <p className="mt-3 text-black max-w-xl">
@@ -127,7 +127,7 @@ export default function AdminStatistikPage() {
               />
 
               <NumberInput
-                label="Jumlah Dusun"
+                label="Jumlah RT"
                 value={jumlahDusun}
                 setValue={setJumlahDusun}
               />
