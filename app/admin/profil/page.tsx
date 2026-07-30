@@ -137,32 +137,28 @@ export default function AdminProfilDusunPage() {
             </div>
 
           </section>
-                    {/* Visi dan Misi */}
-          <section>
+                    {/* Potensi dan Informasi */}
+<section>
+  <h2 className="mb-5 text-lg font-semibold text-black">
+    Potensi dan Informasi Dusun
+  </h2>
 
-            <h2 className="mb-5 text-lg font-semibold text-black">
-              Visi dan Misi
-            </h2>
+  <div className="space-y-5">
+    <Textarea
+      label="Potensi Unggulan"
+      value={visi}
+      setValue={setVisi}
+      rows={4}
+    />
 
-            <div className="space-y-5">
-
-              <Textarea
-                label="Visi"
-                value={visi}
-                setValue={setVisi}
-                rows={3}
-              />
-
-              <Textarea
-                label="Misi"
-                value={misi}
-                setValue={setMisi}
-                rows={5}
-              />
-
-            </div>
-
-          </section>
+    <Textarea
+      label="Informasi Dusun"
+      value={misi}
+      setValue={setMisi}
+      rows={5}
+    />
+  </div>
+</section>
 
           {/* Informasi Kontak */}
           <section>
